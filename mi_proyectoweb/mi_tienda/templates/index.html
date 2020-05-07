@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MI TIENDA</title>
+    <link rel="stylesheet" href="{% static 'css/micss.css'%}">
+    <link rel="shortcut icon" href="{% static 'SpaceX.ico'%}">
+
+
+    <script type="text/javascript" src="{% static 'mi-js.js'%}" defer>
+    </script>
+  </head>
+  <body>
+    <div align="center"><p>I would like to die on Mars; just not on impact...</p></div>
+    <img class= "logo" src="{% static 'SpaceX.png'%}" alt="logo de SpaceX" id="logo"  width="190" height="25" >
+    <div class="bar" style="font-size:3vw" >
+      <a href='Show_products/' style="text-decoration:none">---- Items List</a>&nbsp;&nbsp;&nbsp;
+      <a href='formulario1/' style="text-decoration:none">Encargos</a></li>&nbsp;&nbsp;&nbsp;
+      <a href='Show_pedido/' style="text-decoration:none">Pedidos---</a>&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <div id="classproducts" style="font-size:3vw" align=center >
+      <a href="FalconSerie/" style="text-decoration:none">Falcon Serie</div>
+        <div align=center>
+      <img src="/static/falconlogo.png" width="400px" height="280px"></a>
+    </div>
+
+  </body>
+</html>

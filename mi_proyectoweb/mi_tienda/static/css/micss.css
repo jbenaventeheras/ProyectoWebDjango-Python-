@@ -1,0 +1,25 @@
+
+@font-face {
+  font-family: Space;
+  src: url("space_age.ttf");
+}
+
+body {
+  background-color: 	#a7adba;
+  font-size: 300;
+  font-family: Space;
+}
+
+p {
+  color: white;
+  font: Arial;
+  font-variant: normal;
+  font-size: 300;
+  margin: auto;
+   display:block;
+}
+
+.logo{
+		    margin: auto;
+		    display:block;
+    }

@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario 1</title>
+  </head>
+  <body>
+    <h1>Formulario de Pedido</h1>
+    <!--A esta vista sólo podemos acceder atraváes del atributo actio -->
+    <form  action="/mi_tienda/recepcion1/" method="post">
+      <!-- anti csrf attack
+      Esto genera un token y sólo permite recibir datos de aquellos clients que tengan ese token-->
+      {% csrf_token %}
+      <label>Nombre de la persona que hace el pedido: <label>
+      <input type="text" name="nombre" />
+      <label>Producto <label>
+      <input type="text" name="producto" />
+      <input type="submit" value="OK" />
+    </form>
+  </body>
+</html>
